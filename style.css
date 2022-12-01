@@ -178,7 +178,7 @@ span.fade{
     width: 75px;
     height: 75px;
     border: 2px solid rgb(255, 240, 180);
-    background: url(img/rock.png);
+    background: url(rock.png);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -187,7 +187,7 @@ span.fade{
     width: 75px;
     height: 75px;
     border: 2px solid rgb(255, 240, 180);
-    background: url(img/paper.png);
+    background: url(paper.png);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -196,7 +196,7 @@ span.fade{
     width: 75px;
     height: 75px;
     border: 2px solid rgb(255, 240, 180);
-    background: url(img/scissors.png);
+    background: url(scissors.png);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
