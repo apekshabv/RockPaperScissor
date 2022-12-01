@@ -1,0 +1,58 @@
+<script>
+    function computerPlay(){
+        // choose random number from 0 to 2
+        index = Math.floor(Math.random() * 3)
+        // create a list with options of plays
+        plays = ["rock", "paper", "scissors"]
+        // returns a random play
+        return plays[index] 
+    }
+
+    function playRound(playerSelection, computerSelection){
+        // caso as escolhas sejam iguais é um emapte
+        if (playerSelection === computerSelection){
+            return "Dang, its a tie!"
+        } 
+        
+        // define os casos que o jogador vence, por default ele perde
+        switch(true) {
+            case playerSelection == 'rock' && computerSelection === 'scissors':
+            case playerSelection == 'paper' && computerSelection == 'rock':
+            case playerSelection == 'scissors' && computerSelection == 'paper':
+                return `Yeahhh, you won! ${playerSelection} beats ${computerSelection}`;
+                break;
+
+            default:
+                return `Nooooo, you loose! ${computerSelection} beats ${playerSelection}`;
+                break;
+        }
+    }
+
+    function game(){
+        // game starts with player with 0 points
+        playerScore = 0
+        
+        // the game lasts 5 rounds
+        for (let i = 0; i < 5; i++){
+            // os jogadores escolhem
+            playerSelection = prompt("Choose rock, paper or scissors")
+            computerSelection = computerPlay()
+
+            // O round é jogado
+            res = playRound(playerSelection, computerSelection)
+            console.log(res)
+
+            // decida quem vence, some 1 se ganha e -1 se perde
+            playerScore += res[0] == 'Y' ? 1 : res[0] == 'D' ? 0 : -1         
+        }
+
+        // o jogador terá vencido se possuir mais vitorias que derrotas ou empate caso score igual a 0
+        if (playerScore > 0){
+            console.log('You won the Gamee')
+        } else if (playerScore == 0){
+            console.log('IT WAS A TIEEEE')
+        } else {
+            console.log('So SO SO sorrrrryyy you loosee.')
+        }
+    }
+</script>
