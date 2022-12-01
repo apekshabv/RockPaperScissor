@@ -125,7 +125,7 @@ h1{
   width: 150px;
   height: 150px;
   border: 2px solid rgb(255, 240, 180);
-  background: url(img/rock.png);
+  background: url(img/rock.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -135,7 +135,7 @@ h1{
   width: 150px;
   height: 150px;
   border: 2px solid rgb(255, 240, 180);
-  background: url(img/paper.png);
+  background: url(img/paper.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 50%;
